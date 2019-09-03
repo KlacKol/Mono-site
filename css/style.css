@@ -1,0 +1,214 @@
+* {
+    box-sizing: border-box;
+}
+@font-face {
+	font-family: 'proxibold';
+    src:  url('../fonts/proximanova-bold.otf') ;
+}
+@font-face {
+    font-family: 'proxiregular';
+	src:  url('../fonts/12093.ttf') ;
+}
+@font-face {
+    font-family: 'Helvetica';
+	src:  url('../fonts/HelveticaNeueCyr-Medium.ttf') ;
+} 
+@font-face {
+    font-family: 'proxisemibold';
+	src:  url('../fonts/ProximaNovaT-Thin.ttf') ;
+}   
+header {
+    background: #ffffff;
+    
+}
+.logo {
+    float: left;
+    margin: 0 100px 0 70px;
+  
+}
+.site-header {
+    min-height: 200px;
+    padding: 0 22% 0 22%;
+
+}
+.mon {
+    float: left;
+    margin-right: 180px;
+}
+.monobln {
+    font-size: 35px;
+    font-family: Myriad Pro;
+    font-weight: 300;
+}
+.starts {
+    display: flex;
+    -webkit-box-align: center; 
+    -webkit-align-items: center; 
+    -ms-flex-align: center;
+    align-items: center; 
+    -webkit-box-orient: horizontal; 
+    -webkit-box-direction: normal; 
+    -webkit-flex-direction: row; 
+    -ms-flex-direction: row;
+    flex-direction: row; 
+}
+.starts-span {
+    border: solid 1px #4d98de;
+    color: #73aee5;
+    font-size: 15px;
+    margin-left: 20px;
+    border-radius: 7%;
+    padding: 5px 20px 2px 5px;
+    font-family: Myriad Pro;
+}
+.stats {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    list-style: none;
+}
+.stats-span {
+    font-family: proxibold;
+}
+.container::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+li {
+    margin-right: 35px;
+    font-family: proxiregular;
+}
+.date {
+    font-family: Tahoma;
+    font-size: 17px;
+}
+.date ul {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    list-style: none;
+}
+.date-call input {
+    border: 1px solid #DDD;
+    border-radius: 3px;
+    text-shadow: 0 1px 1px white;
+    -webkit-box-shadow: 0 1px 1px #fff;
+    -moz-box-shadow:    0 1px 1px #fff;
+    box-shadow:         0 1px 1px #fff;
+    font-family: Helvetica;
+    font-size: 14px; 
+    padding: 6px 10px;
+    white-space: nowrap;
+    vertical-align: middle;
+    color: #666;
+    background: transparent;
+    cursor: pointer;
+    outline: none;
+    background-image: url(../img/ic_close_black_24dp.png), url(../img/ic_date_range.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: 75% , 95%;
+}
+.date-call input::after {
+    color: black;
+}
+
+body {
+    background: #fafafa;
+}
+.mask {
+    height: 20px;
+    background: #fafafa;
+}
+.photo-gallery {
+    padding: 0 22% 0 22%;
+    padding-top: 70px;
+}
+.photo {
+    display: inline-block;
+    margin: 0 30px 30px 0;
+    position: relative;
+}
+.photo-upload {
+    position: absolute;
+    top: 82%;
+    color: #fff;
+    left: 20%;
+    font-size: 17px;
+    font-family: proxisemibold;
+}
+
+.img__link { 
+    display: block; 
+    position: relative; 
+}
+
+.img__link::after {
+    content: ''; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 3px; 
+    background: rgba(0,0,0,.5);  
+    opacity: 1; 
+}
+.feedb-today {
+    position: absolute;
+    top: 51%;
+    color: #fff;
+    left: 6%;
+    font-size: 17px;
+    font-family: proxisemibold;
+}
+.feedb-date {
+    position: absolute;
+    top: 66%;
+    color: #fff;
+    left: 6%;
+    font-size: 17px;
+    font-family: proxisemibold;
+}
+.feedb-today-like {
+    margin: 0 21px 0 58px;
+    font-family: proxibold;
+}
+
+.feedb-today-comm {
+    font-family: proxibold;
+}
+.feedb-date-like {
+    margin: 0 26px 0 28px;
+    font-family: proxibold;
+}
+.feedb-date-comm {
+    font-family: proxibold;
+}
+.loadmore {
+    border: 1px solid black;
+    border-radius: 2em;
+    padding: 10px 30px;
+    position: absolute;
+    margin: 40px 0 100px;
+    left: 47%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+.button-load-more {
+   text-decoration: none;
+   color: black;
+   font-size: 12px;
+   font-family: proxiregular;
+}
